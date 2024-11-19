@@ -1,6 +1,14 @@
 [package]
+<<<<<<< HEAD
 name = "matrix_addition"
+=======
+name = "shared_memory_copy"
+>>>>>>> 9f7509c (Initial commit with matrix addition program)
 version = "0.1.0"
 edition = "2021"
 
 [dependencies]
+<<<<<<< HEAD
+=======
+shmem = "0.2" 
+>>>>>>> 9f7509c (Initial commit with matrix addition program)
