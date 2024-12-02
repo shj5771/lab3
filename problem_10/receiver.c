@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <unistd.h>
 #include <string.h>
 #include <sys/ipc.h>
 #include <sys/msg.h>
@@ -19,7 +18,8 @@ int main() {
     struct msg_buffer message;
 
     // 메시지 큐의 키 생성
-    key = ftok("chat_program.c", 65);
+    key = ftok(".", 65);  // 현재 디렉토리의 파일을 사용
+;
     if (key == -1) {
         perror("ftok 실패");
         exit(1);
